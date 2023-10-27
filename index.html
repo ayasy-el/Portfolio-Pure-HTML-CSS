@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <input id="collapsible" class="toggle" type="checkbox" checked />
+  <div id="nav-bar">
+    <input id="nav-toggle" type="checkbox" />
+    <div id="nav-header">
+      <div id="nav-title">My Profile</div>
+      <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+      <hr />
+    </div>
+    <div id="nav-content">
+      <label class="nav-button">
+        <input type="radio" name="tab" id="tabHome" checked />
+        <i class="fas fa-house"></i><span>Home</span>
+      </label>
+      <label class="nav-button">
+        <input type="radio" name="tab" id="tabPendidikan" />
+        <i class="fas fa-graduation-cap"></i><span>Riwayat Pendidikan</span>
+      </label>
+      <label class="nav-button">
+        <input type="radio" name="tab" id="tabJadwal" />
+        <i class="fas fa-calendar"></i><span>Jadwal Kuliah</span>
+      </label>
+      <hr />
+      <input type="radio" name="tab" id="tabAktivitas" />
+      <label for="tabAktivitas" class="nav-button">
+        <a style="display: contents" href="#aktivitas_kampus"><i class="fas fa-school"></i><span>Aktivitas di Kampus</span></a>
+      </label>
+      <label for="tabAktivitas" class="nav-button">
+        <a style="display: contents" href="#aktivitas_luar"><i class="fas fa-person"></i><span>Aktivitas diluar Kampus</span></a>
+      </label>
+      <hr />
+      <label class="nav-button">
+        <input type="radio" name="tab" id="tabAbout" />
+        <i class="fas fa-address-book"></i><span>About Me</span>
+      </label>
+      <div id="nav-content-highlight"></div>
+    </div>
+    <input id="nav-footer-toggle" type="checkbox" />
+    <div id="nav-footer">
+      <div id="nav-footer-heading">
+        <div id="nav-footer-avatar">
+          <img src="profile.jpeg" />
+        </div>
+        <div id="nav-footer-titlebox">
+          <a id="nav-footer-title">Ayasy.el</a><span id="nav-footer-subtitle">Mahasiswa</span>
+        </div>
+        <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+      </div>
+      <div id="nav-footer-content">
+        <p>
+          Perkenalkan saya Ilyasa Ayasy El Ghofiqi, Mahasiswa Politeknik
+          Elektronika Negeri Surabaya, jurusan Teknologi Rekayasa Internet
+          angkatan 2023
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div id="home">
+      <img class="img-profile" src="profile.jpeg" alt="" />
+      <h1>Welcome<span class="garis"></span></h1>
+      <p>
+        Halo semua! Perkenalkan, saya Ilyasa Ayasy El Ghofiqi, seorang yang
+        memiliki minat mendalam di dalam dunia teknologi dan programming. Saat
+        ini saya sedang berkuliah di Politeknik Elektronika Negeri Surabaya di
+        semester pertama.
+      </p>
+      <br />
+      <div class="alert">
+        <i class="alert-icon fa-solid fa-circle-info"></i>
+        <p style="padding: 10px 10px 10px 40px">
+          Web ini dibuat dengan
+          <b>100% Pure CSS tanpa javascript</b>,<br />
+        </p>
+      </div>
+
+      <table class="data">
+        <tr>
+          <th>Nama</th>
+          <td>:</td>
+          <td></td>
+          <td>Ilyasa Ayasy El Ghofiqi</td>
+        </tr>
+        <tr>
+          <th>Prodi</th>
+          <td>:</td>
+          <td></td>
+          <td>Teknologi Rekayasa Internet</td>
+        </tr>
+        <tr>
+          <th>NRP</th>
+          <td>:</td>
+          <td></td>
+          <td>2423600060</td>
+        </tr>
+      </table>
+      <a href="https://www.instagram.com/ayasy.el/">@ayasy.el</a>
+    </div>
+    <div id="pendidikan">
+      <img class="img-profile" src="profile.jpeg" alt="" />
+      <h1>Riwayat Pendidikan <span class="garis"></span></h1>
+      <br /><br />
+      <div style="text-align: left; margin-left: 20px">
+        <h3>SDIT Nur Hidayah Surakarta</h3>
+        <p>2011 - 2017</p>
+        <br />
+        <h3>SMPIT Ibnu Abbas Klaten</h3>
+        <p>2017 - 2020</p>
+        <br />
+        <h3>SMAIT Ibnu Abbas Klaten</h3>
+        <p>2020 - 2023</p>
+        <br />
+        <h3>Politeknik Elektronika Negeri Surabaya</h3>
+        <p>2023 - sekarang</p>
+        <br />
+      </div>
+    </div>
+    <div id="aboutme">
+      <img class="img-profile" src="profile.jpeg" alt="" />
+      <h1>About Me<span class="garis"></span></h1>
+      <br />
+      <p>
+        Mahasiswa D4 Politeknik Elektronika Negeri Surabaya (PENS), Jurusan
+        Teknologi Rekayasa Internet.
+      </p>
+
+      <table class="data">
+        <tr>
+          <th>Nama</th>
+          <td>:</td>
+          <td></td>
+          <td>Ilyasa Ayasy El Ghofiqi</td>
+        </tr>
+        <tr>
+          <th>Umur</th>
+          <td>:</td>
+          <td></td>
+          <td>18 tahun</td>
+        </tr>
+        <tr>
+          <th>TTL</th>
+          <td>:</td>
+          <td></td>
+          <td>Boyolali, 10 November 2004</td>
+        </tr>
+      </table>
+
+      <h2>
+        The Best Way To Predict The Global Future Is To Create It By Yourself
+      </h2>
+      <br />
+      <a style="text-decoration: none" href="https://www.instagram.com/ayasy.el/"><i class="fa-brands fa-instagram"></i><span>&ensp;@ayasy.el</span></a>&emsp;&emsp;&emsp;
+      <a style="text-decoration: none" href="https://github.com/ayasy-el"><i class="fa-brands fa-github"></i><span>&ensp;@ayasy.el</span></a>
+    </div>
+    <div id="jadwal">
+      <table cellspacing="0">
+        <tr>
+          <th width="60">HARI</th>
+          <th width="150">MATA KULIAH</th>
+          <th width="110">DOSEN PENGAMPU</th>
+          <th width="80">JAM</th>
+          <th width="20">RUANGAN</th>
+        </tr>
+        <tr>
+          <td rowspan="2">SENIN</td>
+          <td>Praktikum Elektronika Digital 1</td>
+          <td>Mohamad Ridwan</td>
+          <td>08:00 sd 10:30</td>
+          <td>JJ 303</td>
+        </tr>
+        <tr>
+          <td>Praktikum Sistem Komunikasi</td>
+          <td>Aries Pratiarso</td>
+          <td>13:50 sd 16:20</td>
+          <td>E 105</td>
+        </tr>
+        <tr>
+          <td rowspan="3">SELASA</td>
+          <td>Praktikum Arsitektur Komputer</td>
+          <td>Norma Ningsih</td>
+          <td>08:00 sd 10:30</td>
+          <td>E 305</td>
+        </tr>
+        <tr>
+          <td>Algoritma dan Struktur Data</td>
+          <td>Mike Yuliana</td>
+          <td>13:00 sd 14:40</td>
+          <td>A 301</td>
+        </tr>
+        <tr>
+          <td>Arsitektur Komputer</td>
+          <td>Haryadi Amran Darwito</td>
+          <td>14:40 sd 16:20</td>
+          <td>A 301</td>
+        </tr>
+        <tr>
+          <td rowspan="2">RABU</td>
+          <td>Praktikum Algoritma dan Struktur Data</td>
+          <td>Mike Yuliana</td>
+          <td>08:00 sd 10:30</td>
+          <td>JJ 309</td>
+        </tr>
+        <tr>
+          <td>Elektronika Digital 1</td>
+          <td>Afifah Dwi Ramadhani</td>
+          <td>11:20 sd 13:50</td>
+          <td>A 303</td>
+        </tr>
+        <tr>
+          <td rowspan="2">KAMIS</td>
+          <td>Agama</td>
+          <td>Choliliyah Thoha</td>
+          <td>08:00 sd 09:40</td>
+          <td>HH 101</td>
+        </tr>
+        <tr>
+          <td>Sistem Komunikasi</td>
+          <td>Aries Pratiarso</td>
+          <td>13:50 sd 15:30</td>
+          <td>A 303</td>
+        </tr>
+        <tr>
+          <td rowspan="2">JUM'AT</td>
+          <td>Workshop Teknologi Web dan Aplikasi</td>
+          <td>Norma Ningsih</td>
+          <td>08:00 sd 11:20</td>
+          <td>E 205</td>
+        </tr>
+        <tr>
+          <td>Matematika 1</td>
+          <td>Rini Satiti</td>
+          <td>13:00 sd 14:40</td>
+          <td>A 301</td>
+        </tr>
+      </table>
+    </div>
+    <div id="aktivitas">
+      <img class="img-profile" src="profile.jpeg" alt="" />
+      <h1 id="aktivitas_kampus">
+        Aktivitas di Kampus<span class="garis"></span>
+      </h1>
+      <article style="text-align: left; padding: 0px 40px 60px 40px">
+        <br />
+        <h2>Kelas dan Kuliah</h2>
+        <p>
+          Aktivitas utama selama kuliah adalah menghadiri kelas dan kuliah.
+          Saya memastikan untuk hadir tepat waktu, aktif mengikuti
+          perkuliahan, mencatat materi penting, dan berpartisipasi dalam
+          diskusi kelas. Ini adalah momen penting untuk belajar dan memahami
+          materi akademik.
+        </p>
+        <br />
+        <h2>Istirahat</h2>
+        <p>
+          Setelah kelas, saya menghabiskan waktu untuk makan siang di kantin
+          kampus bersama teman-teman. Ini adalah momen yang menyenangkan untuk
+          berbincang-bincang, melepas penat, dan berbagi pengalaman.
+        </p>
+        <br />
+        <h2>Studi dan Tugas</h2>
+        <p>
+          Setelah dari kantin, sambil menunggu jam berikutnya. Saya
+          mengerjakan tugas-tugas dan laporan-laporan yang diberikan oleh
+          dosen, biasanya di perpus D4. Selain itu, Saya membaca buku,
+          mengambil catatan, dan melakukan riset tambahan untuk memperdalam
+          pemahaman saya terhadap topik kuliah.
+        </p>
+        <br />
+        <h2>UKM dan Komunitas</h2>
+        <p>
+          Untuk memperluas wawasan dan keterampilan saya di luar akademik,
+          saya aktif terlibat dalam kegiatan ekstrakurikuler di kampus. UKM
+          dan komunitas yang saya ikuti:
+        </p>
+        <ul style="padding-left: 80px; padding-top: 10px">
+          <li>UKM Softdev</li>
+          <li>UKM Dirgantara</li>
+          <li>Komunitas Cybersecurity</li>
+          <li>Komunitas Webdev</li>
+        </ul>
+      </article>
+      <h1 id="aktivitas_luar">
+        Aktivitas diluar Kampus<span class="garis"></span>
+      </h1>
+      <article style="text-align: left; padding-left: 40px; padding-right: 40px">
+        <br />
+        <h2>Kepentingan Kebutuhan Dasar</h2>
+
+        <ol type="a">
+          <li>
+            <h3>Makan dan Minum</h3>
+            <p>
+              Setiap harinya, saya memastikan untuk menyediakan makanan dan
+              minuman yang sehat di kos. Saya bisa memasak sendiri atau
+              membeli makanan siap saji, tergantung pada jadwal dan preferensi
+              saya.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Tidur yang Cukup</h3>
+            <p>
+              Kesehatan dan kesejahteraan saya sangat penting, jadi saya
+              menjaga jadwal tidur yang teratur dan cukup untuk memastikan
+              saya selalu segar dan siap menghadapi aktivitas sehari-hari,
+              termasuk perkuliahan.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Perawatan Diri</h3>
+            <p>
+              Saya melakukan perawatan diri harian seperti mandi, menjaga
+              kebersihan kamar, mencuci pakaian, dan menjaga kebersihan
+              lingkungan kos agar tetap nyaman dan teratur.
+            </p>
+          </li>
+          <br />
+        </ol>
+
+        <h2>Kegiatan Akademik</h2>
+
+        <ol type="a">
+          <li>
+            <h3>Mengerjakan Tugas</h3>
+            <p>
+              Setelah pulang dari kampus, saya melanjutkan mengerjakan tugas
+              dan proyek akademik di kos. Saya menetapkan jadwal dan target
+              harian untuk menyelesaikan tugas-tugas ini.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Belajar Mandiri</h3>
+            <p>
+              Saya juga mengambil waktu untuk belajar mandiri di kos. Saya
+              membaca materi kuliah, mencatat catatan, mempersiapkan
+              presentasi, dan melakukan review terhadap materi yang dipelajari
+              di kampus.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Memanfaatkan Sumber Belajar</h3>
+            <p>
+              Saya memanfaatkan buku, materi online, dan sumber belajar
+              lainnya untuk memastikan pemahaman yang lebih baik terhadap
+              topik kuliah dan tugas-tugas yang diberikan.
+            </p>
+          </li>
+        </ol>
+
+        <h2>Belajar dan Meningkatkan Keterampilan</h2>
+
+        <ol type="a">
+          <li>
+            <h3>Pengembangan Skill dan Wawasan</h3>
+            <p>
+              Setiap harinya, saya mengalokasikan waktu untuk belajar dan
+              meningkatkan keterampilan ataupun wawasan, terlebih di dunia IT
+              dan pro. Saya bisa memilih bahasa pemrograman tertentu atau
+              fokus pada proyek-proyek yang ingin saya kembangkan.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Mengikuti Tutorial dan Kursus Online</h3>
+            <p>
+              Saya mencari tutorial dan kursus online yang relevan dengan
+              bidang pemrograman yang ingin saya kuasai. Sumber daya daring
+              ini membantu saya memahami konsep-konsep baru dan meningkatkan
+              keterampilan teknis saya.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Membangun Proyek-Proyek Kecil</h3>
+            <p>
+              Saya memulai proyek-proyek kecil untuk mengaplikasikan apa yang
+              telah saya pelajari. Proyek-proyek ini membantu saya memahami
+              implementasi dan memperdalam pemahaman saya terhadap bahasa
+              pemrograman yang sedang saya pelajari.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Berbagi Pengetahuan dengan Teman</h3>
+            <p>
+              Saya berbagi pengetahuan dan pengalaman saya dengan teman
+              seangkatan yang memiliki minat serupa. Diskusi ini dapat membuka
+              sudut pandang baru dan membantu memperdalam pemahaman bersama.
+            </p>
+          </li>
+          <br />
+          <li>
+            <h3>Mengikuti Hackathon atau Kompetisi Pemrograman</h3>
+            <p>
+              Saya berpartisipasi dalam hackathon atau kompetisi pemrograman
+              untuk menguji keterampilan dan pengetahuan saya, serta untuk
+              mendapatkan pengalaman praktis dalam menyelesaikan tantangan
+              teknologi.
+            </p>
+          </li>
+          <br />
+        </ol>
+      </article>
+    </div>
+  </div>
+</body>
+
+</html>
